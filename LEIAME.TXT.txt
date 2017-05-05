@@ -1,0 +1,19 @@
+------------------------ QUERY DE CRIAÇÃO DA TABELA ------------------------
+
+CREATE TABLE IF NOT EXISTS `pessoa` (
+  `id` int(11) NOT NULL,
+  `nome` varchar(255) NOT NULL,
+  `sobrenome` varchar(255) NOT NULL,
+  `CPF` varchar(255) NOT NULL,
+  `dataNasc` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+INSERT INTO `pessoa` (`id`, `nome`, `sobrenome`, `CPF`, `dataNasc`) VALUES
+(1, 'Artur', 'Guimaraes', '111.111.111-11', '04/02/1992'),
+(2, 'Joao', 'da silva ', '222.222.212-22', '03/03/1960'),
+(3, 'Joao', 'Pereira ', '333.333.333-33', '09/02/1989'),
+(4, 'Marcelo', 'Guimaraes ', '444.444.444-44', '09/02/1989');
+-----------------------------------------------------------------------------
+
+OBS: Modificar as informações do banco de dados no arquivo config/config_database.php.
